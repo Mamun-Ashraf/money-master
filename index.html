@@ -9,7 +9,40 @@
 </head>
 
 <body>
-    <h1>Money Master</h1>
+    <h1 class="text-7xl font-bold text-green-900 mt-12 text-center">Money Master</h1>
+    <div class="bg-slate-200 md:w-1/2 mx-auto my-12 text-center">
+        <h2 class="text-3xl font-semibold">Income</h2>
+        <div class="py-8 text-xl font-semibold">
+            <span class="md:mr-3">Income :</span>
+            <input id="income" type="number" class="bg-slate-300 px-8 py-3 w-1/2 rounded" placeholder="Tk.">
+        </div>
+        <h2 class="text-3xl font-semibold">Expense</h2>
+        <div class="py-8 text-xl font-semibold">
+            <span class="md:mr-3">Food :</span>
+            <input id="food" type="number" class="bg-slate-300 px-8 py-3 w-1/2 rounded" placeholder="Tk.">
+        </div>
+        <div class="text-xl font-semibold">
+            <span class="md:mr-3">Rent :</span>
+            <input id="rent" type="number" class="bg-slate-300 px-8 py-3 w-1/2 rounded" placeholder="Tk.">
+        </div>
+        <div class="py-8 text-xl font-semibold">
+            <span class="md:mr-3">Clothes :</span>
+            <input id="clothes" type="number" class="bg-slate-300 px-8 py-3 w-1/2 rounded" placeholder="Tk.">
+        </div>
+        <button id="btn-calculate"
+            class="bg-blue-400 px-12 py-3 text-white text-xl font-bold rounded text-center">Calculate</button>
+        <h2 class="text-2xl font-semibold my-6">Total Expenses : Tk. <span id="total-expense">0</span></h2>
+        <h2 class="text-2xl font-semibold">Balance : Tk. <span id="balance">0</span></h2>
+        <div class="py-8 text-xl font-semibold">
+            <span class="mr-3">Save :</span>
+            <input id="save-percentage" type="number" class="bg-slate-300 px-8 w-1/2 py-3 rounded my-3 md:my-0">
+            <span class="mx-3">%</span>
+            <button id="btn-save"
+                class="bg-blue-400 px-12 py-3 text-white text-xl font-bold rounded text-center">Save</button>
+        </div>
+        <h2 class="text-2xl font-semibold my-6">Saving Amount : Tk. <span id="saving-amount">0</span></h2>
+        <h2 class="text-2xl font-semibold pb-6">Remaining Balance : Tk. <span id="remaining-balance">0</span></h2>
+    </div>
 
 
     <!-- JS Files -->
